@@ -87,10 +87,4 @@ async def on_ready():
     print('Logged on as {}'.format(client.user))
     
 
-with open("config.json", "r") as f:
-    data = json.load(f)
-    SJtoken = data['tokens']['dev']['ShinJosselin']  # ShinJosselin
-    SBtoken = data['tokens']['dev']['SBBot']  # SBBot
-    PRODtoken = data['tokens']['prod']['SBBot']  # PROD SBBot
-
-    client.run(process.env.TOKEN)
+client.run(process.env.TOKEN)

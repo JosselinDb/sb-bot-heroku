@@ -87,4 +87,4 @@ async def on_ready():
     print('Logged on as {}'.format(client.user))
     
 
-client.run(process.env.TOKEN)
+client.run(os.environ.get('TOKEN'))

@@ -93,4 +93,4 @@ with open("config.json", "r") as f:
     SBtoken = data['tokens']['dev']['SBBot']  # SBBot
     PRODtoken = data['tokens']['prod']['SBBot']  # PROD SBBot
 
-    client.run(PRODtoken)
+    client.run(process.env.TOKEN)

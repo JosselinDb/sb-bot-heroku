@@ -18,10 +18,11 @@ class AdminManager:
 
     """
 
-    with open("config.json", "r") as f:
-        data = json.load(f)
-
-        admins = data['admins']
+    admins = [
+        327364259958882305,
+        480124045279363073,
+        312926990888075264
+    ]
 
 
     def __new__(cls) -> object:
